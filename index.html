@@ -3,13 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SG Flight Buddy - DJI Phantom 4 Rental | UAPL Exam Prep</title>
+    
+    <title>SG Flight Buddy | DJI Phantom 4 Rental for CAAS UAPL Exam Prep</title>
+    <meta name="description" content="Affordable DJI Phantom 4 rental for CAAS UAPL practical exam preparation in Singapore. Includes 3 batteries, cones, and a flight buddy at East Coast Lagoon.">
+    <meta name="keywords" content="UAPL rental Singapore, DJI Phantom 4 rental, drone exam prep Singapore, CAAS drone license, SG Flight Buddy">
+    
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="SG Flight Buddy - UAPL Drone Rental">
+    <meta property="og:description" content="Prepare for your CAAS UAPL exam with a DJI Phantom 4. Only $150 per session.">
+    <meta property="og:url" content="https://edmundwee.github.io/sgflightbuddy/">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "SG Flight Buddy",
+      "description": "DJI Phantom 4 Rental for CAAS UAPL Practical Exam Preparation in Singapore.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Singapore",
+        "addressRegion": "East Coast",
+        "streetAddress": "East Coast Lagoon Food Village"
+      },
+      "priceRange": "$150"
+    }
+    </script>
+
     <style>
         :root {
             --primary-blue: #007bff;
             --dark-grey: #333;
             --light-grey: #f4f4f9;
+            --whatsapp-green: #25d366;
         }
 
         body {
@@ -22,7 +49,7 @@
 
         header {
             background: #fff;
-            padding: 2rem 1rem;
+            padding: 2.5rem 1rem;
             text-align: center;
             border-bottom: 3px solid var(--primary-blue);
         }
@@ -39,6 +66,7 @@
         .hero-title {
             color: var(--primary-blue);
             margin-bottom: 0.5rem;
+            font-size: 2.2rem;
         }
 
         .price-tag {
@@ -70,25 +98,51 @@
         .bonus-box {
             background: #e7f3ff;
             border-left: 5px solid var(--primary-blue);
-            padding: 1rem;
+            padding: 1.2rem;
             margin: 2rem 0;
         }
 
-        .btn-booking {
-            display: block;
-            background: var(--primary-blue);
-            color: white;
+        .section-header {
             text-align: center;
-            padding: 1.2rem;
-            text-decoration: none;
-            font-size: 1.25rem;
-            font-weight: bold;
-            border-radius: 5px;
-            transition: background 0.3s ease;
+            margin-top: 3rem;
+            border-top: 1px solid #eee;
+            padding-top: 2rem;
         }
 
-        .btn-booking:hover {
-            background: #0056b3;
+        /* WhatsApp Floating Button */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 25px;
+            right: 25px;
+            background-color: var(--whatsapp-green);
+            color: #fff;
+            padding: 12px 20px;
+            border-radius: 50px;
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            font-weight: bold;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+            z-index: 1000;
+            transition: transform 0.3s ease;
+            animation: pulse 2s infinite;
+        }
+
+        .whatsapp-float:hover {
+            transform: scale(1.05);
+            background-color: #128c7e;
+            color: white;
+        }
+
+        .whatsapp-float i {
+            font-size: 24px;
+            margin-right: 10px;
+        }
+
+        @keyframes pulse {
+            0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
+            70% { box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
         }
 
         footer {
@@ -96,7 +150,14 @@
             font-size: 0.9rem;
             color: #777;
             margin-top: 3rem;
-            padding-bottom: 2rem;
+            padding-bottom: 5rem; /* Extra padding for WhatsApp button space */
+        }
+
+        @media (max-width: 480px) {
+            .hero-title { font-size: 1.6rem; }
+            .whatsapp-float span { display: none; }
+            .whatsapp-float { padding: 15px; border-radius: 50%; }
+            .whatsapp-float i { margin-right: 0; }
         }
     </style>
 </head>
@@ -104,23 +165,22 @@
 
 <header>
     <h1 class="hero-title">SG Flight Buddy<br>CAAS UAPL Exam Preparation</h1>
-    <p>Professional DJI Phantom 4 Rental for CAAS UAPL Practical Exam Preparation</p>
+    <p>Professional DJI Phantom 4 Rental for CAAS UAPL Practical Exam Preparation in Singapore</p>
 </header>
 
 <div class="container">
     <h2>Rental Package Details</h2>
     <p>Prepare for your UAPL assessment with the industry-standard DJI Phantom 4. Our package includes everything you need for a focused training session.</p>
     
-    <div class="price-tag">$150 / Session (Special price for a limited time)</div>
+    <div class="price-tag">$150 / Session</div>
 
     <ul class="service-list">
         <li><i class="fas fa-check"></i> DJI Phantom 4 Drone</li>
         <li><i class="fas fa-check"></i> Remote Controller & 3 Batteries</li>
         <li><i class="fas fa-check"></i> Cones & Helipad provided for flight drills</li>
-        <li><i class="fas fa-check"></i> ~90 Minute Session (Depends on your flight with 3 batteries)</li>
+        <li><i class="fas fa-check"></i> ~90 Minute Session (Based on 3 battery cycles)</li>
         <li><i class="fas fa-check"></i> Accompanied by a Flight Buddy</li>
-	<li><i class="fas fa-check"></i> Flight location - East Coast Lagoon Food Village</li>
-
+        <li><i class="fas fa-map-marker-alt"></i> Location: East Coast Lagoon Food Village, Singapore</li>
     </ul>
 
     <div class="bonus-box">
@@ -128,22 +188,29 @@
         Receive a free <strong>Eachine E010 / JJRC H36</strong> (or equivalent) for your first session—perfect for practicing nose orientation indoors!
     </div>
 
-<header>
-<div class="center-text">
-  <h1 class="center-text">Book Your Session Now</h1>
-</div>
-</header>
-    <div class="bonus-box">
-        <strong>If you prefer other time slots, please WhatsApp 98950047 for more details!!</strong>
+    <div class="section-header">
+        <h2>Book Your Session Now</h2>
+        <p>Select an available slot below or WhatsApp for custom timings.</p>
     </div>
-<!-- Calendly inline widget begin -->
-<div class="calendly-inline-widget" data-url="https://calendly.com/uaplacademy/30min" style="min-width:320px;height:700px;"></div>
-<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
-<!-- Calendly inline widget end -->
+
+    <div class="calendly-inline-widget" data-url="https://calendly.com/uaplacademy/30min" style="min-width:320px;height:700px;"></div>
+    <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+    <div class="bonus-box" style="text-align: center;">
+        <strong>Need a different time?</strong><br>
+        Please WhatsApp <strong>98950047</strong> for custom arrangements!
+    </div>
 </div>
 
+<a href="https://wa.me/6598950047?text=Hi%20SG%20Flight%20Buddy,%20I'm%20interested%20in%20booking%20a%20UAPL%20prep%20session!" 
+   class="whatsapp-float" 
+   target="_blank" 
+   rel="noopener noreferrer">
+    <i class="fab fa-whatsapp"></i>
+    <span>WhatsApp Us</span>
+</a>
+
 <footer>
-    &copy; 2026 UAPL Academy. All rights reserved.
+    &copy; 2026 UAPL Academy Singapore. All rights reserved.
 </footer>
 
 </body>
